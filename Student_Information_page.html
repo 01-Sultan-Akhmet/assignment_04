@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Student Information</title>
+    <link rel="stylesheet" href="Untitled-1.html">
+    <link rel="stylesheet" href="body {.css">
+    <script src="function_js.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+            <img src="New_logo_SDU.jpg" alt="Logo_SDU" width="80px" height="80px">
+            <ul id="ul" onmouseover="mouseOver()" onmouseout="mouseOut()">
+                <li id="My" onmouseover="mouseOver()" onmouseout="mouseOut()">Home page</li>
+                <li>Stuff</li>
+                <li>Curriculum</li>
+                <li>Course Schedule</li>
+                <li>About us</li>
+            </ul>
+    </div>
+    <button onclick="mouseOver()">mouse</button>
+    <button onclick="change_size()">change size</button>
+    <button onclick="change_img()">change img</button>
+    <button onclick="changebyclass()">change2</button>
+    <button onclick="changebytag()">change3</button>
+
+    <select id="mySelect" onchange="myFunction()">
+        <option value="SDU">SDU</option>
+        <option value="KBTU">KBTU</option>
+        <option value="IITU">IITU</option>
+        <option value="KIMEP">KIMEP</option>
+    </select>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("mySelect").value;
+          document.getElementById("demo").innerHTML = "You selected: " + x;
+        }
+    </script>
+            
+
+    <div class="container">
+            <div class="fun">
+                <img src="SDU.jpg" alt="SDU">
+                
+            </div>
+        <div class="container_right">
+             <pre><h1>  <p class="story2">Sdudent Information</p></h1></pre>
+
+            <table borders="2" width="400" height="100">
+                <tr>
+                    <td>Name</td>
+                    <td>Sultanbek</td>
+                </tr>
+
+                <tr>
+                    <td>Surname</td>
+                    <td>Akhmet</td>
+                </tr>
+
+                <tr>
+                    <td>ID</td>
+                    <td>200103298</td>
+                </tr>
+
+                <tr>
+                    <td>Email:</td>
+                    <td>200103298@stu.sdu.edu.kz</td>
+                </tr>
+
+                <tr>
+                    <td>City</td>
+                    <td>Shymkent</td>
+                </tr>
+
+                <tr>
+                    <td>Advisor</td>
+                    <td>Altynbek Amirzhanov</td>
+                </tr>
+
+                <tr>
+                    <td>Grant type</td>
+                    <td>State grant</td>
+                </tr>
+
+                <tr>
+                    <td>Date of birth</td>
+                    <td>01.12.2001</td>
+                </tr>
+
+
+            </table>
+        </div>
+    </div>
+
+    <div class="questions">
+            <h1>Do you have a question?</h1>
+
+        <textarea name="" id="" cols="80" rows="10"></textarea>
+    </div>
+    <h1 id="demo">Mouse over me</h1>
+
+        <script>
+        document.getElementById("demo").addEventListener("mouseover", mouseOver);
+        document.getElementById("demo").addEventListener("mouseout", mouseOut);
+
+        function mouseOver() {
+        document.getElementById("demo").style.color = "red";
+        }
+
+        function mouseOut() {
+        document.getElementById("demo").style.color = "black";
+        }
+    </script>
+
+    <a href="Untitled-1.html" target="blank"><h2>Next</h2></a>
+
+</body>
+
+</html>

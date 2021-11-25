@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Index</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                $("p").hide(1000);
+            });
+            $("#show").click(function(){
+                $("p").show();
+            });
+            });
+        </script>
+    </head>
+    <body>
+        <p>If you click on the "Hide" button</p>
+
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+    </body>
+    <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("#div1").fadeToggle();
+            $("#div2").fadeToggle("slow");
+            $("#div3").fadeToggle(1000);
+          });
+        });
+        </script>
+        </head>
+        <body>
+        
+        <div id="div1"><img src="photo1.jpg" alt="" width="800px" height="800px"></div>
+        <br>
+        <div id="div2"><img src="photo2.jpg" alt="" width="800px" height="800px"></div>
+        <br>
+        <div id="div3"><img src="photo3.jpg" alt="" width="800px" height="800px"></div>
